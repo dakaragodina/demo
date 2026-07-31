@@ -42,29 +42,3 @@ lightbox.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeLightbox();
 });
-
-// Booking form
-const bookingForm = document.getElementById('bookingForm');
-const formNote = document.getElementById('formNote');
-const BAR_PHONE = '+79603784311';
-
-bookingForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  const name = bookingForm.name.value.trim();
-  const phone = bookingForm.phone.value.trim();
-
-  formNote.classList.remove('success', 'error');
-
-  if (!name || !phone) {
-    formNote.textContent = 'Заполните имя и телефон — по ним мы вам перезвоним.';
-    formNote.classList.add('error');
-    return;
-  }
-
-  formNote.textContent = 'Заявка принята! Мы перезвоним вам в ближайшее время для подтверждения брони.';
-  formNote.classList.add('success');
-  bookingForm.reset();
-  bookingForm.time.value = '19:00';
-  bookingForm.guests.value = 2;
-});
