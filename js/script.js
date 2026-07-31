@@ -16,15 +16,16 @@ nav.querySelectorAll('a').forEach((link) => {
 
 // Gallery lightbox
 const lightbox = document.getElementById('lightbox');
-const lightboxIcon = document.getElementById('lightboxIcon');
+const lightboxImg = document.getElementById('lightboxImg');
 const lightboxCaption = document.getElementById('lightboxCaption');
 const lightboxClose = document.getElementById('lightboxClose');
 
 document.querySelectorAll('.gallery-item').forEach((item) => {
   item.addEventListener('click', () => {
-    const icon = item.querySelector('.gallery-icon').textContent;
+    const img = item.querySelector('img');
     const caption = item.dataset.caption || '';
-    lightboxIcon.textContent = icon;
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
     lightboxCaption.textContent = caption;
     lightbox.hidden = false;
   });

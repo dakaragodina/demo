@@ -329,32 +329,36 @@
 <section class="section section-alt" id="gallery">
   <div class="container">
     <h2 class="section-title">ФОТО<span class="accent">АЛЬБОМ</span></h2>
-    <p class="section-sub">Живые фото интерьера и блюд скоро появятся здесь. Пока — карточки-заглушки для навигации по альбому.</p>
+    <p class="section-sub">Как оно есть — зал, бар и еда честного бара.</p>
 
     <div class="gallery-grid" id="galleryGrid">
-      <button class="gallery-item" data-caption="Зал бара">
-        <span class="gallery-icon">🍺</span>
+      <button class="gallery-item" data-caption="Зал">
+        <img src="images/zal.jpg" alt="Зал честного бара с кожаными диванами" loading="lazy">
         <span class="gallery-label">Зал</span>
       </button>
       <button class="gallery-item" data-caption="Барная стойка">
-        <span class="gallery-icon">🥃</span>
+        <img src="images/bar.jpg" alt="Барная стойка честного бара" loading="lazy">
         <span class="gallery-label">Барная стойка</span>
       </button>
-      <button class="gallery-item" data-caption="Закуски и стритфуд">
-        <span class="gallery-icon">🍔</span>
-        <span class="gallery-label">Кухня</span>
+      <button class="gallery-item" data-caption="Терраса">
+        <img src="images/terrasa.jpg" alt="Летняя терраса честного бара" loading="lazy">
+        <span class="gallery-label">Терраса</span>
       </button>
-      <button class="gallery-item" data-caption="Вечерняя атмосфера">
-        <span class="gallery-icon">🌙</span>
-        <span class="gallery-label">Вечер</span>
+      <button class="gallery-item" data-caption="Атмосфера">
+        <img src="images/atmosfera.jpg" alt="Бармен и гости честного бара" loading="lazy">
+        <span class="gallery-label">Атмосфера</span>
       </button>
-      <button class="gallery-item" data-caption="Компания друзей">
-        <span class="gallery-icon">🎉</span>
-        <span class="gallery-label">Компания</span>
+      <button class="gallery-item" data-caption="Легендарный хот-дог">
+        <img src="images/hot-dog.jpg" alt="Легендарный хот-дог с картофелем фри" loading="lazy">
+        <span class="gallery-label">Хот-дог</span>
       </button>
-      <button class="gallery-item" data-caption="Сеты на компанию">
-        <span class="gallery-icon">🍗</span>
-        <span class="gallery-label">Сеты</span>
+      <button class="gallery-item" data-caption="Бургер и тёмное пиво">
+        <img src="images/burger.jpg" alt="Бургер и тёмное пиво" loading="lazy">
+        <span class="gallery-label">Бургер</span>
+      </button>
+      <button class="gallery-item" data-caption="Честная кесадилья">
+        <img src="images/kesadilya.jpg" alt="Кесадилья на барной стойке" loading="lazy">
+        <span class="gallery-label">Кесадилья</span>
       </button>
     </div>
   </div>
@@ -363,7 +367,7 @@
 <div class="lightbox" id="lightbox" hidden>
   <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">✕</button>
   <div class="lightbox-content">
-    <span class="lightbox-icon" id="lightboxIcon"></span>
+    <img class="lightbox-img" id="lightboxImg" alt="">
     <p class="lightbox-caption" id="lightboxCaption"></p>
   </div>
 </div>
