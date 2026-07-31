@@ -378,21 +378,6 @@ img { max-width: 100%; display: block; }
 
 .gallery-item:hover img { transform: scale(1.06); }
 
-.gallery-label {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 28px 14px 12px;
-  background: linear-gradient(0deg, rgba(0,0,0,0.85), transparent);
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 0.06em;
-  color: var(--white);
-  text-align: left;
-}
-
 /* Lightbox */
 .lightbox {
   position: fixed;
