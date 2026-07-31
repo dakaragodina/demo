@@ -177,17 +177,6 @@ img { max-width: 100%; display: block; }
 
 .hero-inner { position: relative; }
 
-.hero-badge {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 13px;
-  color: var(--gray);
-  border: 1px solid var(--border);
-  padding: 6px 14px;
-  border-radius: 999px;
-  margin: 0 0 22px;
-}
-
 .hero h1 {
   font-size: clamp(42px, 8vw, 84px);
   line-height: 0.95;
