@@ -5,6 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ЧЕСТНЫЙ БАР — бар на Карла Маркса, 20, Ульяновск</title>
 <meta name="description" content="Честный бар в Ульяновске: закуски, стритфуд, сеты и комбо. Бронь столика по звонку.">
+
+<meta property="og:type" content="restaurant">
+<meta property="og:site_name" content="Честный бар">
+<meta property="og:title" content="ЧЕСТНЫЙ БАР — бар на Карла Маркса, 20, Ульяновск">
+<meta property="og:description" content="Закуски, стритфуд и честные порции в центре Ульяновска. Меню, фотоальбом, бронь столика по звонку.">
+<meta property="og:image" content="https://dakaragodina.github.io/demo/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dakaragodina.github.io/demo/">
+<meta property="og:locale" content="ru_RU">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ЧЕСТНЫЙ БАР — бар на Карла Маркса, 20, Ульяновск">
+<meta name="twitter:description" content="Закуски, стритфуд и честные порции в центре Ульяновска. Меню, фотоальбом, бронь столика по звонку.">
+<meta name="twitter:image" content="https://dakaragodina.github.io/demo/images/og-image.jpg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
@@ -61,9 +77,21 @@
   <div class="container">
     <h2 class="section-title">МЕНЮ</h2>
     <p class="section-sub">Актуальные позиции и цены. Вес указан для готового блюда.</p>
+  </div>
 
+  <nav class="menu-tabs" aria-label="Разделы меню">
+    <div class="container menu-tabs-inner">
+      <a href="#tab-zakuski">Закуски</a>
+      <a href="#tab-stritfud">Стритфуд</a>
+      <a href="#tab-sety">Сеты</a>
+      <a href="#tab-bar">Бар</a>
+      <a href="#tab-napitki">Напитки</a>
+    </div>
+  </nav>
+
+  <div class="container">
     <div class="menu-grid">
-      <div class="menu-col">
+      <div class="menu-col" id="tab-zakuski">
         <h3 class="menu-title"><span>ЗА</span><span class="accent">КУСКИ</span></h3>
 
         <h4 class="menu-subtitle">Холодные</h4>
@@ -186,7 +214,7 @@
         </ul>
       </div>
 
-      <div class="menu-col">
+      <div class="menu-col" id="tab-stritfud">
         <h3 class="menu-title"><span>СТРИТ</span><span class="accent">ФУД</span></h3>
 
         <h4 class="menu-subtitle">Честные бургеры</h4>
@@ -262,7 +290,7 @@
       </div>
     </div>
 
-    <div class="menu-sets">
+    <div class="menu-sets" id="tab-sety">
       <h3 class="menu-title menu-title-center"><span class="w">СЕТЫ</span> <span class="accent w">И</span> <span class="w">КОМБО</span></h3>
 
       <div class="menu-sets-grid">
@@ -322,7 +350,7 @@
       </div>
     </div>
 
-    <div class="menu-drinks">
+    <div class="menu-drinks" id="tab-bar">
       <h3 class="menu-title menu-title-center">БАР</h3>
 
       <div class="menu-drinks-grid">
@@ -582,7 +610,7 @@
             </li>
           </ul>
 
-          <h4 class="menu-subtitle-lg">НАПИТКИ</h4>
+          <h4 class="menu-subtitle-lg" id="tab-napitki">НАПИТКИ</h4>
           <ul class="menu-list menu-list-compact">
             <li class="menu-item">
               <div class="menu-item-head">

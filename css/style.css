@@ -240,6 +240,53 @@ img { max-width: 100%; display: block; }
   font-size: 16px;
 }
 
+/* Menu tabs */
+.menu-tabs {
+  position: sticky;
+  top: 72px;
+  z-index: 40;
+  background: rgba(10, 10, 10, 0.96);
+  backdrop-filter: blur(6px);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 48px;
+}
+
+.menu-tabs-inner {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 12px 24px;
+}
+
+.menu-tabs-inner::-webkit-scrollbar { display: none; }
+
+.menu-tabs-inner a {
+  flex: none;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray);
+  white-space: nowrap;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.menu-tabs-inner a:hover,
+.menu-tabs-inner a:focus-visible {
+  color: var(--white);
+  border-color: var(--red);
+  background: rgba(226, 35, 26, 0.1);
+}
+
+#tab-zakuski, #tab-stritfud, #tab-sety, #tab-bar, #tab-napitki {
+  scroll-margin-top: 140px;
+}
+
 /* Menu */
 .menu-grid {
   display: grid;
