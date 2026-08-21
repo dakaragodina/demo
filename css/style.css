@@ -283,7 +283,7 @@ img { max-width: 100%; display: block; }
   background: rgba(226, 35, 26, 0.1);
 }
 
-#tab-zakuski, #tab-stritfud, #tab-sety, #tab-bar, #tab-napitki {
+#tab-zakuski, #tab-stritfud, #tab-sety, #tab-bar, #tab-krepkiy, #tab-napitki {
   scroll-margin-top: 140px;
 }
 
