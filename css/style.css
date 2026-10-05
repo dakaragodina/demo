@@ -283,7 +283,7 @@ img { max-width: 100%; display: block; }
   background: rgba(226, 35, 26, 0.1);
 }
 
-#tab-zakuski, #tab-stritfud, #tab-sety, #tab-bar, #tab-krepkiy, #tab-napitki {
+#tab-zakuski, #tab-stritfud, #tab-sety, #tab-bar, #tab-krepkiy, #tab-avtorskie, #tab-napitki {
   scroll-margin-top: 140px;
 }
 
@@ -323,6 +323,11 @@ img { max-width: 100%; display: block; }
 }
 
 .menu-list-compact .menu-item { padding: 9px 0; }
+
+.menu-list-signature {
+  max-width: 640px;
+  margin: 30px auto 0;
+}
 
 .menu-item-head {
   display: flex;
