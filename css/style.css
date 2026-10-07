@@ -381,13 +381,6 @@ img { max-width: 100%; display: block; }
   border-top: 2px solid var(--border);
 }
 
-.menu-sets-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  margin-top: 30px;
-}
-
 .menu-drinks {
   margin-top: 80px;
   padding-top: 60px;
@@ -683,7 +676,7 @@ img { max-width: 100%; display: block; }
   .header-inner { flex-wrap: nowrap; }
   .header-call { order: 2; padding: 10px; margin-left: auto; }
   .header-call span { display: none; }
-  .menu-grid, .menu-sets-grid, .menu-drinks-grid { grid-template-columns: 1fr; gap: 48px; }
+  .menu-grid, .menu-drinks-grid { grid-template-columns: 1fr; gap: 48px; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { padding: 60px 0 50px; }
 }
